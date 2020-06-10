@@ -20,20 +20,84 @@
 			font-size: 80px;	
 			color: Red;	
 		}
-	
+		.loginform{  
+   		 	 padding:10px;  
+   			 border:3px solid black;  
+   			 border-radius:10px;  
+			 Height:180px;
+   			 width:300px;
+   			 margin-top:50px;
+			 
+  
+			} 
+		.formheading{  
+    			background-color:red;
+			border:3px solid black; 
+			border-radius:10px;  
+   			 color:white;  
+   			 padding:4px;  
+  			 text-align:center;  
+			}  
+		.sub{  
+			background-color:red;  
+			padding: 7px 40px 7px 40px;  
+			color:white;  
+			font-weight:bold;  
+			margin-left:70px;  
+			border-radius:10px;  
+			}  
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+} 
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+	.section {
+        width: 80%;
+    }
 	</style>
 	<body background-color:blue>
-	<div id="div1" style="text-align: center">
-	UserName &nbsp &nbsp&nbsp: <input id="uname" name="UserName" type="text" class="textField"></input><br/><br/>
-	PassordWord: <input id="pwd" name="password" type="password" class="textField"></input><br/><br/>
-	<button id="sumbitbtn" name="submit" type="button">Submit</button> &nbsp&nbsp&nbsp&nbsp
-	<button id="cancelbtn" name"cancel" type="button">Cancel</button><br/><br/>
+<div class="header">
+  <h1>My Web page</h1>
+</div>
+
+<div class="wrapper clearfix">
+<div style="width:25%; height:350px; margin-top:10px; padding:20px; background-color:#d4d7dc; ">
+
+	<div class="loginform">  
+	<h3 class="formheading">Please Login</h3>  
+	<form action="LoginServlet" method="post">  
+	<table>  
+	<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+	<tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
+	<tr><td colspan="2" style="text-align:center"><input class="sub" type="submit" value="login"/></td></tr>  
+	</table>  
+	</form>  
+	</div> 
+</div>
+	<div class="section">
 	<input type="checkBox" id="reme"> Remember</input><br/><br/>
 	<input type="radio" id="radioM"> MALE</input><br/>
 	<input type="radio" id="radioF" checked> FEMALE</input><br/><br/>
 	<a href="https://google.com" id="forgotPass">Forgot PassordWord</a>
 	</div>
-	<div style="text-align: left">
+</div>
+	    <div class="card">
+      <h3>Popular Post</h3>
 	
 	<img src="C:\Users\DELL\Documents\QiaT93TQ_400x400.jpg" title="Google_Logo"></img>
 	</div>
