@@ -20,14 +20,42 @@
 			font-size: 80px;	
 			color: Red;	
 		}
+		.loginform{  
+   		 	 padding:10px;  
+   			 border:1px solid pink;  
+   			 border-radius:10px;  
+			Height:200px;
+   			 width:350px;
+   			 margin-top:10px;  
+			} 
+		.formheading{  
+    			background-color:red;  
+   			 color:white;  
+   			 padding:4px;  
+  			  text-align:center;  
+			}  
+		.sub{  
+			background-color:red;  
+			padding: 7px 40px 7px 40px;  
+			color:white;  
+			font-weight:bold;  
+			margin-left:70px;  
+			border-radius:5px;  
+			}   
 	
 	</style>
 	<body background-color:blue>
+	<div class="loginform">  
+	<h3 class="formheading">Please Login</h3>  
+	<form action="LoginServlet" method="post">  
+	<table>  
+	<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+	<tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
+	<tr><td colspan="2" style="text-align:center"><input class="sub" type="submit" value="login"/></td></tr>  
+	</table>  
+	</form>  
+	</div> 
 	<div id="div1" style="text-align: center">
-	UserName &nbsp &nbsp&nbsp: <input id="uname" name="UserName" type="text" class="textField"></input><br/><br/>
-	PassordWord: <input id="pwd" name="password" type="password" class="textField"></input><br/><br/>
-	<button id="sumbitbtn" name="submit" type="button">Submit</button> &nbsp&nbsp&nbsp&nbsp
-	<button id="cancelbtn" name"cancel" type="button">Cancel</button><br/><br/>
 	<input type="checkBox" id="reme"> Remember</input><br/><br/>
 	<input type="radio" id="radioM"> MALE</input><br/>
 	<input type="radio" id="radioF" checked> FEMALE</input><br/><br/>
